@@ -2,3 +2,85 @@
     document.write("A média do valor gasto com as viagens é") ;
     document.write( (200 + 100 + 300 + 400) / 4);
 </script>
+
+<script>
+    var n = 3;
+    document.write("O resultado da fórmula é : " + n * (10 / 20)  );
+    document.write(3 * '<br>');
+    document.write(3 * 'FIM');
+</script>
+
+<br>
+
+<script>
+    function pulaLinha() {
+      document.write("<br>");
+    }
+  
+    function mostra(frase) {
+      document.write(frase);
+    }
+    var minhaIdade = 18;
+    var idadeIrmao = 15;
+    mostra("Nossa diferença de idade é " + (minhaIdade - idadeIrmao));
+    pulaLinha();
+  </script>
+
+<script>
+    function pulaLinha() {
+
+        document.write("<br>");
+    }
+
+    function mostra(frase) {
+        document.write(frase);
+        pulaLinha();
+    }
+
+    function a(numero1, numero2) {
+        return numero1 + numero2;
+    }
+
+    function b(numero1, numero2) {
+        return numero1 / numero2;
+    }
+
+    var resultado = a(10,20) + b(30,2);
+
+    mostra(resultado);
+</script>
+
+<meta charset="UTF-8">
+
+<script>
+    function pulaLinha() {
+
+        document.write("<br>");
+    }
+
+    function mostra(frase) {
+        document.write(frase);
+        pulaLinha();
+    }
+
+    function a(texto) {
+
+        return "(" + texto + ")";
+    }
+
+    function b(texto) {
+
+        return "@" + texto + "@";
+    }
+
+    function c(nome, sobrenome) {
+
+        return b(nome + " " + a(sobrenome));
+
+    }
+
+    var resultado = c("Flávio", "Almeida");
+
+    mostra(resultado);
+
+</script>
