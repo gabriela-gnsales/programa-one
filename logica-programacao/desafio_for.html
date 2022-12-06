@@ -1,0 +1,56 @@
+<meta charset="UTF-8">
+
+<script>
+
+    var cont = 10;
+
+    for(var linha = 1; linha <= 10; linha++) {
+
+        for(var coluna = 1; coluna <= cont; coluna++) {
+            document.write('*');
+        }
+        cont--;
+        document.write('<br>');
+    }
+
+    document.write('<hr>');
+
+    var cont = 11;
+
+    for(var linha = 1; linha <= 11; linha++) {
+
+        for(var coluna = 1; coluna <= cont; coluna++) {
+            document.write('*');
+        }
+        cont -= 2;
+        document.write('<br>');
+    }
+
+    document.write('<hr>');
+
+    var cont = 11;
+    var espaco = 0;
+
+    for(var linha = 1; linha <= 6; linha++) {
+
+        
+        for(var i = 0; i < espaco / 2; i++) {
+                document.write('_');
+            } 
+
+
+        for(var coluna = 1; coluna <= cont; coluna++) {
+            document.write('*');
+        }
+
+        for(var i = 0; i < espaco / 2; i++) {
+                document.write('_');
+            } 
+
+        cont -= 2;
+        espaco += 2;
+        
+        document.write('<br>');
+    }
+
+</script>
