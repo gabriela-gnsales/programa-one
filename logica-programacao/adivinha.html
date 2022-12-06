@@ -1,8 +1,8 @@
 <meta charset="UTF-8">
 
-<input/>
-<!-- <button onclick="verificaNumero()">Adivinhe o número que eu pensei</button> -->
-<button>Adivinhe o número que eu pensei</button>
+<input />
+<!-- <button onclick="verificaNumero()">Adivinhe o número que eu pensei (de 0 a 10)</button> -->
+<button>Adivinhe o número que eu pensei (de 0 a 10)</button>
 
 <script>
 
@@ -10,13 +10,18 @@
     console.log(numero);
 
     var input = document.querySelector('input');
+    input.focus();
 
     function verificaNumero() {
         if(input.value == numero) {
-        alert('ACERTOU!!!');
+        alert('ACERTOU! Parabéns!');
+        numero = Math.round(Math.random() * 10);
+        console.log(numero);
         } else {
-            alert('ERROU! O número que eu pensei foi ' + numero);
+            alert('ERROU! Tente novamente.');
         }
+        input.value = '';
+        input.focus();
     }
 
     var button = document.querySelector('button');

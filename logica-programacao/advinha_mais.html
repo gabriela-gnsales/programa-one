@@ -1,0 +1,57 @@
+<meta charset="UTF-8">
+
+<input />
+<button onclick="verificaNumero()">Adivinhe um dos 5 números da lista secreta</button>
+
+<script>
+
+    function listaNumeros() {
+
+        var numeros = []
+        
+        // for(var i = 0; i < 5; i++) {
+        //     numeros[i] = Math.round(Math.random() * 10);
+        // }
+
+        while(numeros.length < 5) {
+            var numero = Math.round(Math.random() * 10);
+            // if(numeros.includes(numero) == false) {
+            //     numeros.push(numero);
+            // }
+            if(!(numeros.includes(numero))) {
+                numeros.push(numero);
+            }
+        }
+
+        console.log(numeros);
+        return numeros;
+    }
+
+    var input = document.querySelector('input');
+    input.focus();
+
+    var listaSecreta = listaNumeros();
+
+    function verificaNumero() {
+
+        var achou = false;
+
+        for(var j = 0; j < listaSecreta.length; j++) {
+            if(input.value == listaSecreta[j]) {
+                alert('ACERTOU! Parabéns!');
+                achou = true;
+                break;
+            }
+        }
+
+        if(achou == false) {
+            alert('ERROU! Tente novamente.');
+        } else {
+            listaSecreta = listaNumeros();
+        }
+
+        input.value = '';
+        input.focus();
+    }
+
+</script>
