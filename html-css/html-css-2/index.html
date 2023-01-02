@@ -5,7 +5,10 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Barbearia Alura</title>
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="estilos/reset.css">
+        <link rel="stylesheet" href="estilos/header.css">
+        <link rel="stylesheet" href="estilos/footer.css">
+        <link rel="stylesheet" href="estilos/home.css">
 
         <!-- <style>
             p {
@@ -16,29 +19,47 @@
     <body>
 
         <header>
-            <h1 class="titulo-principal">Barbearia Alura</h1>
+            <div class="caixa">
+                <h1 class="titulo-principal">Barbearia Alura</h1>
+                <!-- <h1>
+                    <img src="imagens/logo.png">
+                </h1> -->
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="produtos.html">Produtos</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                    </ul>
+                </nav>
+            </div>
         </header>
 
-        <img id="banner" src="banner.jpg">
+        <main>
+            <img id="banner" src="imagens/banner.jpg">
+            <div class="principal">
+                <h2 class="titulo-centralizado">Sobre a Barbearia Alura</h2>
+                <!-- <h2 style="text-align: center">Sobre a Barbearia Alura</h2> -->
+                <p>Localizada no coração da cidade a <strong>Barbearia Alura</strong> traz para o mercado o que há de melhor para o seu cabelo e barba. Fundada em 2019, a Barbearia Alura já é destaque na cidade e conquista novos clientes a cada dia.</p>
+                <p><em>Nossa missão é: <strong>"Proporcionar auto-estima e qualidade de vida aos clientes"</strong>.</em></p>
+                <!-- <p style="font-size: 20px; text-align: center"><em>Nossa missão é: <strong>"Proporcionar auto-estima e qualidade de vida aos clientes"</strong>.</em></p> -->
+                <p>Oferecemos profissionais experientes e antenados às mudanças no mundo da moda. O atendimento possui padrão de excelência e agilidade, garantindo qualidade e satisfação dos nossos clientes.</p>
+            </div>
+            <div class="beneficios">
+                <h3 class="titulo-centralizado">Benefícios</h3>
+                <ul>
+                    <li class="itens">Atendimento ao cliente</li>
+                    <li class="itens">Espaço diferenciado</li>
+                    <li class="itens">Localização</li>
+                    <li class="itens">Profissionais qualificados</li>
+                </ul>
+                <img class="imagem-beneficios" src="imagens/beneficios.jpg">
+            </div>
+        </main>
 
-        <div class="principal">
-            <h2 class="titulo-centralizado">Sobre a Barbearia Alura</h2>
-            <!-- <h2 style="text-align: center">Sobre a Barbearia Alura</h2> -->
-            <p>Localizada no coração da cidade a <strong>Barbearia Alura</strong> traz para o mercado o que há de melhor para o seu cabelo e barba. Fundada em 2019, a Barbearia Alura já é destaque na cidade e conquista novos clientes a cada dia.</p>
-            <p><em>Nossa missão é: <strong>"Proporcionar auto-estima e qualidade de vida aos clientes"</strong>.</em></p>
-            <!-- <p style="font-size: 20px; text-align: center"><em>Nossa missão é: <strong>"Proporcionar auto-estima e qualidade de vida aos clientes"</strong>.</em></p> -->
-            <p>Oferecemos profissionais experientes e antenados às mudanças no mundo da moda. O atendimento possui padrão de excelência e agilidade, garantindo qualidade e satisfação dos nossos clientes.</p>
-        </div>
+        <footer>
+            <img src="imagens/logo-branco.png">
+            <p class="copyright">&copy; Copyright Barbearia Alura - 2022</p>
+        </footer>
 
-        <div class="beneficios">
-            <h3 class="titulo-centralizado">Benefícios</h3>
-            <ul>
-                <li class="itens">Atendimento ao cliente</li>
-                <li class="itens">Espaço diferenciado</li>
-                <li class="itens">Localização</li>
-                <li class="itens">Profissionais qualificados</li>
-            </ul>
-            <img class="imagem-beneficios" src="beneficios.jpg">
-        </div>
     </body>
 </html>

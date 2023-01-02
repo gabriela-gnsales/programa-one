@@ -38,7 +38,26 @@ O tamanho da fonte padrão no navegador é medido em pixels. Ocasionalmente **o 
 
 * listas: comportamento/display **block** → tag ocupa a largura inteira da página; bloqueia o conteúdo da linha
 * imagens: comportamento/display **inline** → um elemento inline não deixa alterar, por exemplo, o espaçamento externo e interno dele
-* elementos inline e block (display inline-block): ele bloqueia uma largura, mas essa largura é fixa, o tamanho é definido; deixa também mexer na largura e nos espaçamentos interno e externo
+* elementos inline e block (display inline-block): ele bloqueia uma largura, mas essa largura é fixa, o tamanho é definido; deixa também mexer na largura e nos espaçamentos interno e externo; o tamanho pode ser ajustado, tanto na largura, quanto na altura
+
+#### Posiocionamento dos elementos
+* **static:**
+* **absolute:** usado para alterar a posicão do ponto inicial do elemento; posicionar o elemento em qualquer lugar da página
+* **relative:** usado para deslocar o elemento, mantendo seu ponto inicial fixo
+
+> Melhor técnica para alinhar uma div ao centro → usar o cálculo da margin automático
+
+> Comportamento do elemento quando é adicionado espaçamento interno `padding` → o elemento aumenta sua largura, já que o tamanho dele ficou maior, a não ser que a propriedade `box-sizing` tenha o valor `border-box`.
+
+#### Pseudo-classes CSS
+* **hover:** usado quando o usuário passa o cursor sobre o elemento
+* **active:** usado quando um elemento está sendo ativado pelo usuário
+
+> Utilizando o `hover` o comportamento do mouse por cima do elemento é mapeado, podendo ser usado para destacar visualmente o elemento em questão.
+
+> Adicionar uma imagem de fundo em um elemento → com o valor `url` no `background` do elemento
+
+**Caracteres Unicode:** https://unicode-table.com/en/
 
 #### Cores
 * **Hexadecimal:** dicionário numérico adicionando as letras `abcdef` → `0123456789ABDCEF` → coloca # e marca 6 elementos (os 2 primeiros para marcar o vermelho, os 2 segundos para marcar o verde e os 2 últimos para marcar o azul)

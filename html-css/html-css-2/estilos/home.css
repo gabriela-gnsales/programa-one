@@ -1,12 +1,3 @@
-body {
-    
-}
-
-/* h1 {
-    height: 150px;
-    border: 10px solid #000000;
-} */
-
 em strong {
     color: rgb(255,0,0); /* #FF0000 */ 
 }
@@ -19,9 +10,9 @@ em strong {
     text-align: center;
 }
 
-.titulo-principal {
+/* .titulo-principal {
     padding-left: 20px;
-}
+} */
 
 .principal {
     background: #CCCCCC;
