@@ -1,0 +1,49 @@
+body {
+    
+}
+
+/* h1 {
+    height: 150px;
+    border: 10px solid #000000;
+} */
+
+em strong {
+    color: rgb(255,0,0); /* #FF0000 */ 
+}
+
+#banner {
+    width: 100%;
+}
+
+.titulo-centralizado {
+    text-align: center;
+}
+
+.titulo-principal {
+    padding-left: 20px;
+}
+
+.principal {
+    background: #CCCCCC;
+    padding: 30px;
+}
+
+.beneficios {
+    background: #FFFFFF;
+    padding: 20px;
+}
+
+.itens {
+    font-style: italic;
+}
+
+ul {
+    display: inline-block;
+    vertical-align: top;
+    width: 20%;
+    margin-right: 15%;
+}
+
+.imagem-beneficios {
+    width: 50%;
+}
