@@ -32,6 +32,16 @@ As informações que estamos passando para o navegador ficam no **head** e as in
 * Realizar transições nos nossos elementos → propriedade CSS `transition`
 * Modificar o estilo do ponteiro do mouse, quando passar por cima de determinado elemento → através da propriedade CSS `cursor`
 * Realizar transformações nos elementos, como aumentar proporcionalmente a escala de determinado elemento ou rotacioná-lo → através da propriedade CSS `transform`
+* As tags `<thead>`, `<tbody>` e `<tfoot>` ajudam a deixar o conteúdo da tabela mais bem dividido e mais semântico.
+
+**Tabela HTML**
+* A tag `table` representa a tabela
+* A tag `tr` representa a linha da tabela
+* A tag `td` representa a célula da tabela
+* A tag `thead` representa o cabeçalho da tabela
+* A tag `tbody` representa o corpo da tabela
+* A tag `th` representa a célula do cabeçalho da tabela
+* A tag `tfoot` representa o rodapé da tabela
 
 ***
 

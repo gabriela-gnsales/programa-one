@@ -138,6 +138,21 @@ form label, form legend {
 	/* transform: rotate(70deg) scale(1.2); */
 }
 
+table {
+	margin: 20px 0 40px;
+}
+
+thead {
+	background: #555555;
+	color: white;
+	font-weight: bold;
+}
+
+th, td {
+	border: 1px solid #000000;
+	padding: 8px 15px;
+}
+
 /* Página de contato */
 /* .contato {
 	width: 940px;
