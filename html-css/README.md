@@ -17,6 +17,21 @@ As informações que estamos passando para o navegador ficam no **head** e as in
 * `<body> </body>`: separar o conteúdo da página
 * `<strong> </strong>`: negrito (marcação de destaque)
 * `<em> </em>`: itálico (marcação de ênfase)
+* `<label> </label>`: tag usada para fazer um par com um `<input>`, para ter um título para a entrada de dados; etiqueta para a entrada de dados
+    *  para conectar um input com o seu label tem-se que colocar um id para o input e associá-lo ao atributo for do label
+* `name`: propriedade de um input do tipo radio necessária para que todos os inputs radios façam parte do mesmo grupo
+    * A propriedade name só pode ser "preenchida" uma única vez, por isso que, quando é selecionado um dos itens, ele desmarca o outro, mantendo somente 1 selecionado.
+
+**Alguns tipos de inputs para celular:** email, tel, number, password, date, datetime, month e search
+
+* Não permitir que um campo não seja preenchido → através do atributo `required`
+* Exibir uma sugestão de preenchimento para os campos → através do atributo `placeholder`
+* Deixar uma opção marcada por padrão nos input radio e checkbox → através do atributo `checked`
+* Estruturar melhor o código → com `fieldset` e `legend`
+* Adicionar uma alternativa à imagem → descrevendo-a com o atributo `alt`
+* Realizar transições nos nossos elementos → propriedade CSS `transition`
+* Modificar o estilo do ponteiro do mouse, quando passar por cima de determinado elemento → através da propriedade CSS `cursor`
+* Realizar transformações nos elementos, como aumentar proporcionalmente a escala de determinado elemento ou rotacioná-lo → através da propriedade CSS `transform`
 
 ***
 
@@ -36,9 +51,12 @@ Existem 3 formas de configur o CSS:
 
 O tamanho da fonte padrão no navegador é medido em pixels. Ocasionalmente **o navegador adiciona o tamanho da fonte inicial como 16 pixels**.
 
-* listas: comportamento/display **block** → tag ocupa a largura inteira da página; bloqueia o conteúdo da linha
-* imagens: comportamento/display **inline** → um elemento inline não deixa alterar, por exemplo, o espaçamento externo e interno dele
-* elementos inline e block (display inline-block): ele bloqueia uma largura, mas essa largura é fixa, o tamanho é definido; deixa também mexer na largura e nos espaçamentos interno e externo; o tamanho pode ser ajustado, tanto na largura, quanto na altura
+* comportamento/display **block** → tag ocupa a largura inteira da página; bloqueia o conteúdo da linha
+    * ex: listas
+* comportamento/display **inline** → um elemento inline não deixa alterar, por exemplo, o espaçamento externo e interno dele
+    * ex: imagens, labels
+* elementos **inline e block (display inline-block)**: ele bloqueia uma largura, mas essa largura é fixa, o tamanho é definido; deixa também mexer na largura e nos espaçamentos interno e externo; o tamanho pode ser ajustado, tanto na largura, quanto na altura
+    * ex: input
 
 #### Posiocionamento dos elementos
 * **static:**
