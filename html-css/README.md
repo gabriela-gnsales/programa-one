@@ -18,9 +18,16 @@ As informações que estamos passando para o navegador ficam no **head** e as in
 * `<strong> </strong>`: negrito (marcação de destaque)
 * `<em> </em>`: itálico (marcação de ênfase)
 * `<label> </label>`: tag usada para fazer um par com um `<input>`, para ter um título para a entrada de dados; etiqueta para a entrada de dados
-    *  para conectar um input com o seu label tem-se que colocar um id para o input e associá-lo ao atributo for do label
+    * Para conectar um input com o seu label tem-se que colocar um id para o input e associá-lo ao atributo for do label.
 * `name`: propriedade de um input do tipo radio necessária para que todos os inputs radios façam parte do mesmo grupo
     * A propriedade name só pode ser "preenchida" uma única vez, por isso que, quando é selecionado um dos itens, ele desmarca o outro, mantendo somente 1 selecionado.
+* `<section> </section>`: usada para um bloco onde o conteúdo tenha o mesmo significado / sentido
+
+> Quando se refere a um estilo, usa-se CLASSE.
+> Quando se refere a um comportamento, usa-se IDENTIFICADOR (ID).
+
+> Tanto o `float: left` quanto o `float: right` servem para que o elemento se destaque na tela, deixe de ocupar o espaço em que estava, para que os outros elementos possam se posicionar ao redor dele.
+> A propriedade `clear` é utilizada para limpar o `float`.
 
 **Alguns tipos de inputs para celular:** email, tel, number, password, date, datetime, month e search
 
