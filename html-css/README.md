@@ -92,6 +92,36 @@ O tamanho da fonte padrão no navegador é medido em pixels. Ocasionalmente **o 
 
 > Adicionar uma imagem de fundo em um elemento → com o valor `url` no `background` do elemento
 
+#### Seletores avançados
+* Seletor `>`, para acessar os filhos de determinado elemento. Por exemplo, para acessar todos os `p` dentro de `main`: 
+    ```
+    main > p {
+        background: red; 
+    }
+    ```
+* Seletor `+` para acessar o primeiro irmão de determinado elemento. Por exemplo, para acessar o primeiro `p` após um `img`:
+    ```
+    img + p { 
+        background: blue;
+    }
+    ```
+* Seletor`~` para acessar todos os irmãos de determinado elemento. Por exemplo, para acessar todos os `p` após um `img`:
+    ```
+    img ~ p {
+        background: yellow
+    }
+    ```
+* Seletor `not` para acessar os elementos, exceto algum. Por exemplo, para acessar todos os `p` dentro de `main`, exceto o `p` que tem `id missao`:
+    ```
+    .principal p:not(#missao) {
+        background: orange;
+    }
+    ```
+
+#### Medidas proporcionais
+A propriedade `calc()` é usada para fazer contas com CSS
+* ex: deixar um elemento de 100% de largura com o equivalente a um terço do elemento pai, menos 10px → `width: calc( 33% - 10px )`
+
 **Caracteres Unicode:** https://unicode-table.com/en/
 
 #### Cores
