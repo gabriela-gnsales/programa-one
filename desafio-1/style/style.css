@@ -1,0 +1,89 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+:root {
+    --cor-azul-claro: #E5E5E5;
+    --cor-azul-escuro: #0A3871;
+    --cor-branca: #FFFFFF;
+
+    /* --font-inicio:'Averia Libre', cursive; */
+    --fonte-padrao: 'Inter', sans-serif;
+}
+
+body {
+    background: var(--cor-azul-claro);
+    font-family: var(--fonte-padrao);
+}
+
+header {
+    position: absolute;
+    width: 120px;
+    height: 48px;
+    left: 40px;
+    top: 40px;
+    /* padding-top: 40px;
+    padding-left: 40px; */
+}
+
+header img {
+    width: 120px;
+    height: 48px;
+}
+
+.text-entrada textarea::placeholder {
+    color: var(--cor-azul-escuro);
+}
+
+.texto-saida {
+    background: var(--cor-branca);
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 32px;
+
+    margin: 40px;
+    width: 400px;
+    Height: 944px;
+
+    /* position: absolute; */
+    /* width: 400px;
+    height: 944px;
+    left: 1000px; */
+    /* margin-top: 40px;
+    margin-right: 40px; */
+
+
+}
+
+.botoes {
+    background: red;
+}
+
+.botoes input {
+    border-radius: 24px;
+    width: 328px;
+    height: 67px;
+    /* font-style: normal; */
+    /* font-weight: 400; */
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.botao-criptografar {
+    background: var(--cor-azul-escuro);
+    border: none;
+    color: var(--cor-branca);
+}
+
+.botao-descriptografar {
+    background: var(--cor-azul-claro);
+    border: 1px solid var(--cor-azul-escuro);
+    color: var(--cor-azul-escuro);
+} 
+
+footer {
+    background: var(--cor-azul-escuro);
+    color: var(--cor-branca);
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
